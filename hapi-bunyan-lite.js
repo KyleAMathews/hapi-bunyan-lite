@@ -32,7 +32,7 @@ exports.register = function (plugin, options, next) {
 
     plugin.events
       .on('log', logEvent.bind(null, null)) // request is null
-      .on('request', logEvent);
+      .on('request', logEvent)
       .on('ops', logEvent);
 
     return next();
